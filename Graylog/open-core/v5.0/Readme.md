@@ -31,3 +31,5 @@ change GRAYLOG_ROOT_PASSWORD_SHA2 in .env file
 GRAYLOG_ROOT_PASSWORD_SHA2="d2f79ffcc92402afcfb1e1044a03e03dbedeae232c6dc4de53e842f887035e8a"
 ```
 
+# Send first log
+`echo 'www.kekasi.co.id' | nc localhost 5555`
