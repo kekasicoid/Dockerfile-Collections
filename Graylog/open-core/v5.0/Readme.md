@@ -6,9 +6,13 @@
     - OpenSeacrh v2.4.0
 
 
-- Running
+- Create Container & Running
 
     `docker-compose -f docker-compose.yml up -d`
+
+- Remove Container & Volume
+
+    `docker-compose down -d`
 
 
 ### Web Admin
@@ -26,3 +30,4 @@ change GRAYLOG_ROOT_PASSWORD_SHA2 in .env file
 ```
 GRAYLOG_ROOT_PASSWORD_SHA2="d2f79ffcc92402afcfb1e1044a03e03dbedeae232c6dc4de53e842f887035e8a"
 ```
+
