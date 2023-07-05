@@ -12,7 +12,7 @@
 
 - Remove Container & Volume
 
-    `docker-compose down`
+    `docker-compose down -v`
 
 
 ### Web Admin
