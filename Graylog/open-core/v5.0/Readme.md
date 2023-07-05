@@ -2,7 +2,7 @@
 
 - Description
     - Graylog v5.0
-    - MongoDb v5.0
+    - MongoDB v5.0
     - OpenSeacrh v2.4.0
 
 
