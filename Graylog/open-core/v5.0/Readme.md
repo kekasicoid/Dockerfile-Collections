@@ -35,4 +35,4 @@ GRAYLOG_ROOT_PASSWORD_SHA2="d2f79ffcc92402afcfb1e1044a03e03dbedeae232c6dc4de53e8
 `echo 'www.kekasi.co.id' | nc localhost 5555`
 
 ## How to Deploy in Docker
-[![Get started GrayLog v5.0 in docker](http://img.youtube.com/vi/t32am3NQXiQ/0.jpg)](http://www.youtube.com/watch?v=t32am3NQXiQ)
+[![Get started GrayLog v5.0 in docker](https://img.youtube.com/vi/t32am3NQXiQ/0.jpg)](https://www.youtube.com/watch?v=t32am3NQXiQ)
