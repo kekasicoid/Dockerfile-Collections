@@ -6,6 +6,7 @@ This is a collection of dockerfile or docker-compose configurations that you can
 - [Apache2.2 & PHP5.3](Apache2.2%20%26%20PHP5.3)
 - [RabiitMQ v3.9](RabbitMQ/RabbitMQ_3.9-management)
 - [Graylog v5.0 (Open-Core)](Graylog/open-core/v5.0)
+- [PHP-FPM](PHP-FPM)
 
 
 # Contact 
