@@ -1,0 +1,55 @@
+FROM php:7.4-fpm-alpine
+
+RUN apk update
+
+RUN apk add --no-cache tzdata git \
+ && cp /usr/share/zoneinfo/Asia/Jakarta /etc/localtime \
+ && echo "Asia/Jakarta" > /etc/timezone
+
+# Install dependensi build dan ekstensi penting CodeIgniter 4
+RUN apk add --no-cache \
+    icu-dev \
+    libzip-dev \
+    libpng-dev \
+    oniguruma-dev \
+    libjpeg-turbo-dev \
+    libxml2-dev \
+    curl-dev \
+    openssl-dev \
+    mysql-client \
+    nano \
+    && docker-php-ext-install \
+       intl \
+       mysqli \
+       pdo \
+       pdo_mysql \
+       mbstring \
+       zip \
+       opcache \
+       bcmath \
+       gd \
+       soap \
+    && docker-php-ext-enable \
+       intl \
+       mysqli \
+       pdo \
+       pdo_mysql \
+       mbstring \
+       zip \
+       opcache \
+       bcmath \
+       gd \
+       soap 
+
+
+RUN mkdir -p /var/www/html/writable \
+ && chmod -R 777 /var/www/html/writable \
+ && chown -R www-data:www-data /var/www/html/writable
+
+
+WORKDIR /var/www/html
+
+RUN echo "expose_php = Off" > /usr/local/etc/php/conf.d/00-hide-xpoweredby.ini
+
+# Jalankan php-fpm
+CMD ["php-fpm"]
